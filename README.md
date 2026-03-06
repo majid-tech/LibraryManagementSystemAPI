@@ -6,6 +6,7 @@ REST API for managing books and borrowing workflows, built with Django and Djang
 
 The project currently includes:
 
+- Template-backed project landing page at `/`
 - User registration and token authentication
 - Book management with admin write access
 - Borrow checkout and return flows with transaction safety
@@ -70,6 +71,12 @@ Base API URL:
 
 ```text
 http://127.0.0.1:8000/api/
+```
+
+Project landing page:
+
+```text
+http://127.0.0.1:8000/
 ```
 
 ## Authentication
