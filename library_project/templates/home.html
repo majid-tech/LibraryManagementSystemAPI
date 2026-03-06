@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Library Management System API</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+        }
+        .container {
+            max-width: 860px;
+            margin: 40px auto;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 24px rgba(15, 23, 42, 0.08);
+            padding: 28px;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 1.75rem;
+        }
+        p {
+            line-height: 1.5;
+        }
+        ul {
+            padding-left: 18px;
+        }
+        li {
+            margin: 6px 0;
+        }
+        code {
+            background: #eef2ff;
+            padding: 2px 6px;
+            border-radius: 6px;
+        }
+        a {
+            color: #1d4ed8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<main class="container">
+    <h1>Library Management System API</h1>
+    <p>This project is running successfully. Use the endpoints below to interact with the API.</p>
+
+    <h2>Primary Routes</h2>
+    <ul>
+        <li><a href="/admin/">/admin/</a> - Django admin panel</li>
+        <li><a href="/api/books/">/api/books/</a> - Books endpoints</li>
+        <li><a href="/api/auth/register/">/api/auth/register/</a> - Register</li>
+        <li><a href="/api/auth/token/">/api/auth/token/</a> - Token authentication</li>
+        <li><a href="/api/users/">/api/users/</a> - Users (admin)</li>
+        <li><a href="/api/borrow/checkout/">/api/borrow/checkout/</a> - Checkout</li>
+        <li><a href="/api/borrow/records/">/api/borrow/records/</a> - Borrow records (admin)</li>
+        <li><a href="/api/return/">/api/return/</a> - Return</li>
+        <li><a href="/api/my-borrows/">/api/my-borrows/</a> - My borrows</li>
+    </ul>
+
+    <p>Use <code>Authorization: Token &lt;your_token&gt;</code> for protected endpoints.</p>
+</main>
+</body>
+</html>
