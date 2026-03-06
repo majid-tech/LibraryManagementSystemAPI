@@ -1,9 +1,10 @@
-from django.urls import path
-from .views import RegisterView, BookList, BorrowBookView, ReturnBookView
+from django.urls import include, path
 
 urlpatterns = [
-    path('register/', RegisterView.as_view(), name='register'),
-    path('books/', BookList.as_view(), name='book-list'),
-    path('borrow/<int:book_id>/', BorrowBookView.as_view(), name='borrow-book'),
-    path('return/<int:record_id>/', ReturnBookView.as_view(), name='return-book'),
+    path("auth/", include("library_api.urls_auth")),
+    path("books/", include("library_api.urls_books")),
+    path("users/", include("library_api.urls_users")),
+    path("borrow/", include("library_api.urls_borrow")),
+    path("return/", include("library_api.urls_return")),
+    path("my-borrows/", include("library_api.urls_my_borrows")),
 ]
